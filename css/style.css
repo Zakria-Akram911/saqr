@@ -43,7 +43,7 @@ li.nav-list-item {
 }
 
 li.nav-list-item a {
-  color: darkslategray;
+  color: black;
   font-weight: 600;
   transition: all 0.4s ease-in-out;
 }
@@ -59,7 +59,7 @@ header {
 
 header.active {
   position: fixed;
-  background-color: darkslategray;
+  background-color: rgb(142, 194, 76);
   top: -43px;
 }
 
@@ -91,7 +91,7 @@ header.active li.nav-list-item a {
 }
 
 section.topbar-section {
-  background: rgb(47 79 79 / 40%);
+  background: rgb(142 194 76 / 40%);
   padding: 10px 0px;
 }
 
@@ -129,11 +129,11 @@ section.index-welcome-section {
   font-weight: 400;
   font-size: 40px;
   margin-bottom: 20px;
-  color: darkslategray;
+  color: #8ec24c;
 }
 
 .welcome-owner-credential h3 {
-  color: darkslategray;
+  color: #8ec24c;
 }
 
 .welcome-content {
@@ -161,11 +161,11 @@ section.index-welcome-section {
 .service-count-stat h3 {
   font-size: 34px;
   font-weight: 400;
-  color: darkslategray;
+  color: #8ec24c;
 }
 
 .service-count-stat p {
-  color: darkslategray;
+  color: #8ec24c;
 }
 
 section.index-service-count-section {
@@ -197,12 +197,14 @@ section.index-service-count-section {
 }
 
 .special-services-left p {
-  color: #808080;
+  /* color: #808080; */
+  color: white;
+  opacity: 0.7;
   line-height: 26px;
 }
 
 section.special-service-section {
-  background: darkslategray;
+  background: #8ec24c;
   padding: 70px 0px;
 }
 
@@ -272,7 +274,7 @@ section.special-service-section {
 }
 
 footer {
-  background: darkslategray;
+  background: #8ec24c;
   padding: 20px 0px;
 }
 
@@ -287,6 +289,213 @@ footer {
 
 .hamburger {
   display: none;
+}
+
+/*............. 
+Contact us
+..............*/
+.contact-banner {
+  position: relative;
+}
+
+.contact-banner-image {
+  position: relative;
+}
+
+.contact-banner-heading {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, 0%);
+}
+
+.contact-banner-heading h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.contact-banner-image::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background: rgb(0, 0, 0, 0.6);
+}
+
+.contact-main-section {
+  border-bottom: 1px solid rgba(56, 56, 56, 0.1);
+}
+
+.conatct-main-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0px;
+}
+
+.contact-flex-left {
+  width: 45%;
+}
+
+.contact-us-address {
+  margin-bottom: 30px;
+}
+
+.contact-flex-right {
+  width: 40%;
+  background: #fbfafa;
+  padding: 40px 40px;
+}
+
+form.contact-us-form {
+  padding: 20px 0px;
+}
+
+.contact-flex-right h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.contact-flex-right p {
+  margin: 10px 0px;
+}
+
+.contact-form-input label {
+  display: block;
+  font-size: 14px;
+}
+
+.contact-form-input > input {
+  width: 95%;
+  margin: 10px 0px;
+  border-radius: 70px;
+  height: 45px;
+  outline: none;
+  border: 0.5px solid #e6e6e6;
+  padding: 0px 10px;
+}
+
+.contact-form-input > textarea {
+  resize: none;
+  width: 95%;
+  outline: none;
+  border: 0.5px solid #e6e6e6;
+  border-radius: 6px;
+  margin: 10px 0px;
+  height: 100px;
+  padding: 10px;
+}
+
+.contact-form-btn button {
+  width: 100%;
+  padding: 15px 0px;
+  border-radius: 70px;
+  outline: none;
+  border: none;
+  background: #8ec24c;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact-form-input {
+  margin-bottom: 10px;
+}
+
+.contact-form-input label b {
+  color: #ff0000;
+}
+
+.contact-details-anchors {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.contact-details-anchors > li > h4 {
+  color: #383838;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.contact-details-anchors > li {
+  border: 1px solid rgb(0, 0, 0, 0.6);
+  padding: 10px 10px;
+  border-radius: 9px;
+  transition: all 0.4s ease-in-out;
+}
+
+.contact-details-anchors > li > a {
+  color: black;
+  font-weight: 600;
+}
+
+.contact-details-anchors > li:hover {
+  background: #8ec24c;
+  border: 1px solid #8ec24c;
+  cursor: pointer;
+}
+
+.contact-details-anchors > li:hover a {
+  color: white;
+}
+
+.contact-details-anchors > li:hover h4 {
+  color: white;
+  opacity: 0.4;
+}
+
+.contact-details-address1 h3 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.contact-details-address1 p:nth-child(2) {
+  max-width: 63%;
+}
+
+.contact-details-address1 {
+  margin-bottom: 20px;
+}
+
+.responsive-map {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  border-radius: 20px;
+}
+.responsive-map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.contact-talk h2 {
+  font-size: 46px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.contact-talk h2 b {
+  color: #8ec24c;
+  font-weight: 600;
+}
+
+.contact-details-address1 p {
+  color: rgba(99, 114, 130, 1);
+}
+
+.contact-talk p {
+  color: rgba(99, 114, 130, 1);
+}
+
+.contact-flex-right p {
+  color: rgba(99, 114, 130, 1);
 }
 
 /*.................................. 
@@ -319,7 +528,7 @@ footer {
   header {
     position: fixed;
     top: 0;
-    background: darkslategray;
+    background: #8ec24c;
   }
 
   header.active {
@@ -335,7 +544,7 @@ footer {
     top: -30%;
     height: 30%;
     width: 100%;
-    background: darkslategray;
+    background: #8ec24c;
     left: 0;
     transition: all 0.4s ease-in-out;
   }
