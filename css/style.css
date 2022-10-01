@@ -43,7 +43,7 @@ li.nav-list-item {
 }
 
 li.nav-list-item a {
-  color: black;
+  color: white;
   font-weight: 600;
   transition: all 0.4s ease-in-out;
 }
@@ -100,6 +100,20 @@ section.topbar-section {
   height: 100vh;
   background-size: contain;
   background-position: center;
+}
+
+.banner-main {
+  position: relative;
+}
+
+.banner-main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 0.6);
 }
 
 .index-welcome-flex {
@@ -296,17 +310,16 @@ Contact us
 ..............*/
 .contact-banner {
   position: relative;
-}
-
-.contact-banner-image {
-  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/images/contact-us-banner.jpg");
+  background-size: cover;
 }
 
 .contact-banner-heading {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, 0%);
+  z-index: 1;
 }
 
 .contact-banner-heading h1 {
@@ -314,7 +327,7 @@ Contact us
   font-size: 50px;
 }
 
-.contact-banner-image::after {
+.contact-banner::after {
   content: "";
   position: absolute;
   right: 0;
@@ -498,6 +511,151 @@ form.contact-us-form {
   color: rgba(99, 114, 130, 1);
 }
 
+/*................. 
+Our Services Page
+..................*/
+.service-banner {
+  background: url("/images/service-banner.jpg");
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+}
+
+.service-banner::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background: rgb(0, 0, 0, 0.6);
+}
+
+.service-banner h1 {
+  font-size: 50px;
+  color: white;
+  z-index: 1;
+}
+
+.service-content p {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.service-content {
+  margin: 60px 0px;
+}
+
+.all-service-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px 30px;
+}
+
+.all-service-width {
+  width: 48%;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.all-service-name {
+  margin-bottom: 20px;
+}
+
+.all-service-name p {
+  font-size: 24px;
+  color: black;
+}
+
+.all-service-thumnail {
+  position: relative;
+  overflow: hidden;
+}
+
+.all-service-thumnail::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 0.2);
+}
+
+.all-service-thumnail img {
+  height: 270px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.all-service-width::before {
+  content: "";
+  width: 10%;
+  height: 3px;
+  background: #8ec24c;
+  position: absolute;
+  top: 0;
+}
+
+.all-service-thumnail:hover img {
+  transform: scale(1.2);
+}
+
+/*............. 
+About Us
+...............*/
+.gallery-banner {
+  background: url("/images/about-us-banner.jpg");
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-banner::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background: rgb(0, 0, 0, 0.4);
+}
+
+.gallery-banner h1 {
+  font-size: 50px;
+  color: white;
+  z-index: 1;
+}
+
+.gallery-slider-main {
+  margin: 40px 0px;
+}
+
+.gallery-slider-heading {
+  margin: 30px 0px;
+}
+
+.gallery-slider-heading h2 {
+  font-size: 30px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.my-gallery-carousel-item-image {
+  height: 400px;
+}
+
 /*.................................. 
         For Larger Screen
 ....................................*/
@@ -556,7 +714,7 @@ form.contact-us-form {
   li.nav-list-item {
     display: block;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   li.nav-list-item a {
@@ -662,6 +820,108 @@ form.contact-us-form {
 
   .item.my-services-carousel-item {
     margin: 20px;
+  }
+
+  /*................... 
+    For Contact Us Page  
+  .....................*/
+  section.contact-banner-section {
+    margin-top: 80px;
+  }
+
+  .contact-banner {
+    height: 50vh;
+    background-position: right;
+  }
+
+  .conatct-main-flex {
+    flex-wrap: wrap;
+  }
+
+  .contact-flex-left {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .contact-flex-right {
+    width: 100%;
+    padding: 30px 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+  }
+
+  .contact-form-input > input {
+    max-width: 100%;
+  }
+
+  .contact-form-input > textarea {
+    max-width: 100%;
+  }
+
+  .contact-form-btn button {
+    width: 95%;
+  }
+
+  .contact-google-map > iframe {
+    width: 330px;
+    height: 280px;
+  }
+
+  .contact-details-anchors li {
+    width: 100%;
+  }
+
+  form.contact-us-form {
+    flex-wrap: wrap;
+  }
+
+  .contact-form-input {
+    width: 100%;
+  }
+
+  .contact-details-anchors {
+    flex-wrap: wrap;
+  }
+
+  .contact-details-anchors li:nth-child(2) {
+    margin-top: 20px;
+  }
+
+  .contact-google-map > iframe {
+    width: 100%;
+  }
+
+  /*.................
+  For Services Page 
+  ...................*/
+  .service-banner {
+    height: 50vh;
+    margin-top: 80px;
+  }
+
+  .service-content {
+    margin: 40px 0px;
+  }
+
+  .all-service-width {
+    width: 100%;
+  }
+
+  /*................. 
+  For Gallery Page
+  ...................*/
+  .gallery-banner {
+    height: 50vh;
+    margin-top: 80px;
+  }
+
+  .my-gallery-carousel-item-image {
+    height: 280px;
+  }
+
+  .my-gallery-carousel-item-image img {
+    object-fit: cover;
+    height: 100%;
   }
 }
 

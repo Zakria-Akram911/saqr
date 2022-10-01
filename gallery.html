@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <!-- For Owl -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -72,82 +89,44 @@
       </div>
     </header>
 
-    <section class="contact-banner-section">
-      <div class="contact-banner">
-        <div class="contact-banner-heading">
-          <h1>Contact Us</h1>
-        </div>
+    <section class="gallery-banner-section">
+      <div class="gallery-banner">
+        <h1>Gallery</h1>
       </div>
     </section>
 
-    <section class="contact-main-section">
-      <div class="conatct-main-flex container">
-        <div class="contact-flex-left">
-          <div class="contact-talk">
-            <h2>Let's <b> Talk. </b></h2>
-            <p>
-              If you have any questions about the Products, want to Suggest a
-              Product, contact our team and let's schedule a call or email us.
-            </p>
+    <section class="gallery-main-section">
+      <div class="container">
+        <div class="gallery-slider-main">
+          <div class="gallery-slider-heading">
+            <h2>Our Riders At Your Service</h2>
           </div>
-          <div class="contact-details">
-            <div class="contact-details-anchors">
-              <li>
-                <h4>Call Us</h4>
-                <a href="tel: +97145764114">+97145764114</a>
-              </li>
-              <li>
-                <h4>Email Us</h4>
-                <a href="email: san2-.deliveryservices@gmail.com">
-                  san2-.deliveryservices@gmail.com</a
-                >
-              </li>
+          <div class="gallery-slider-slides">
+            <div class="owl-carousel owl-theme my-gallery-carousel">
+              <div class="item my-gallery-carousel-item">
+                <div class="my-gallery-carousel-item-image">
+                  <img src="images/rider1.jpeg" alt="" />
+                </div>
+              </div>
+              <div class="item my-gallery-carousel-item">
+                <div class="my-gallery-carousel-item-image">
+                  <img src="images/rider2.jpg" alt="" />
+                </div>
+              </div>
+              <div class="item my-gallery-carousel-item">
+                <div class="my-gallery-carousel-item-image">
+                  <img src="images/rider3.jpeg" alt="" />
+                </div>
+              </div>
+              <div class="item my-gallery-carousel-item">
+                <div class="my-gallery-carousel-item-image">
+                  <img src="images/rider4.jpg" alt="" />
+                </div>
+              </div>
             </div>
-            <div class="contact-us-address">
-              <p>
-                <strong>Address: </strong> S 08 Spain cluster T 04 international
-                city warsan 1 dubai UAE
-              </p>
-            </div>
-          </div>
-          <div class="contact-google-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"
-              width="500px"
-              height="410"
-              frameborder="0"
-              style="border: 0; display: block; border-radius: 10px"
-              allowfullscreen
-            ></iframe>
           </div>
         </div>
-        <div class="contact-flex-right">
-          <h2>Get in touch</h2>
-          <p>
-            Ask questions about our product in the form below & we'll be in
-            touch as soon as possible.
-          </p>
-          <form action="" class="contact-us-form">
-            <div class="contact-form-input">
-              <label for="" required>Full Name <b>*</b></label>
-              <input type="text" placeholder="Enter your full name" />
-            </div>
-            <div class="contact-form-input">
-              <label for="" required>Email <b>*</b></label>
-              <input type="email" placeholder="Enter your email address" />
-            </div>
-            <div class="contact-form-input">
-              <label for="">Phone Number</label>
-              <input type="tel" placeholder="Enter your phone no." />
-            </div>
-            <div class="contact-form-input">
-              <label for="">Message</label>
-              <textarea name="" placeholder="Write your message"></textarea>
-            </div>
-            <div class="contact-form-btn">
-              <button type="submit">Submit</button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </section>
@@ -184,6 +163,14 @@
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
   integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+
+<!-- For Owl -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+  integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
 ></script>

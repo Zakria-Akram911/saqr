@@ -8,6 +8,14 @@ $(function () {
   });
 });
 
+// For Hamburger
+$(document).ready(function () {
+  $(".hamburger button").click(function () {
+    $(this).toggleClass("active");
+    $("nav.navbar").toggleClass("active");
+  });
+});
+
 // For Owl
 $(".my-services-carousel").owlCarousel({
   loop: true,
@@ -30,10 +38,24 @@ $(".my-services-carousel").owlCarousel({
   },
 });
 
-// For Hamburger
-$(document).ready(function () {
-  $(".hamburger button").click(function () {
-    $(this).toggleClass("active");
-    $("nav.navbar").toggleClass("active");
-  });
+// For Owl Gallery
+$(".my-gallery-carousel").owlCarousel({
+  loop: true,
+  margin: 0,
+  nav: false,
+  dots: true,
+  autoplay: true,
+  autoplayTimeout: 7000,
+  autoplayHoverPause: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 1,
+    },
+    1025: {
+      items: 1,
+    },
+  },
 });
