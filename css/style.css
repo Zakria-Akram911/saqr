@@ -59,12 +59,12 @@ header {
 
 header.active {
   position: fixed;
-  background-color: rgb(142, 194, 76);
+  background-color: #19181a;
   top: -43px;
 }
 
 header.active li.nav-list-item a {
-  color: white;
+  color: #cebc81;
 }
 
 .topbar-container {
@@ -91,7 +91,7 @@ header.active li.nav-list-item a {
 }
 
 section.topbar-section {
-  background: rgb(142 194 76 / 40%);
+  background: rgb(25 24 26 / 40%);
   padding: 10px 0px;
 }
 
@@ -143,11 +143,11 @@ section.index-welcome-section {
   font-weight: 400;
   font-size: 40px;
   margin-bottom: 20px;
-  color: #8ec24c;
+  color: black;
 }
 
 .welcome-owner-credential h3 {
-  color: #8ec24c;
+  color: black;
 }
 
 .welcome-content {
@@ -175,11 +175,11 @@ section.index-welcome-section {
 .service-count-stat h3 {
   font-size: 34px;
   font-weight: 400;
-  color: #8ec24c;
+  color: #19181a;
 }
 
 .service-count-stat p {
-  color: #8ec24c;
+  color: #19181a;
 }
 
 section.index-service-count-section {
@@ -207,18 +207,18 @@ section.index-service-count-section {
   margin-bottom: 20px;
   font-size: 40px;
   max-width: 80%;
-  color: white;
+  color: #cebc81;
 }
 
 .special-services-left p {
   /* color: #808080; */
-  color: white;
-  opacity: 0.7;
+  color: #cebc81;
+  opacity: 0.8;
   line-height: 26px;
 }
 
 section.special-service-section {
-  background: #8ec24c;
+  background: #19181a;
   padding: 70px 0px;
 }
 
@@ -260,8 +260,7 @@ section.special-service-section {
 
 .footer-content p {
   max-width: 50%;
-  color: white;
-  opacity: 0.7;
+  color: #cebc81;
 }
 
 .footer-top {
@@ -283,12 +282,11 @@ section.special-service-section {
 
 .footer-icon a i {
   font-size: 20px;
-  color: white;
-  opacity: 0.4;
+  color: #cebc81;
 }
 
 footer {
-  background: #8ec24c;
+  background: #19181a;
   padding: 20px 0px;
 }
 
@@ -297,8 +295,7 @@ footer {
 }
 
 .footer-copyright p {
-  color: white;
-  opacity: 0.7;
+  color: #cebc81;
 }
 
 .hamburger {
@@ -406,7 +403,7 @@ form.contact-us-form {
   border-radius: 70px;
   outline: none;
   border: none;
-  background: #8ec24c;
+  background: #19181a;
   color: white;
   font-size: 18px;
   font-weight: 600;
@@ -446,8 +443,8 @@ form.contact-us-form {
 }
 
 .contact-details-anchors > li:hover {
-  background: #8ec24c;
-  border: 1px solid #8ec24c;
+  background: #19181a;
+  border: 1px solid #19181a;
   cursor: pointer;
 }
 
@@ -495,7 +492,7 @@ form.contact-us-form {
 }
 
 .contact-talk h2 b {
-  color: #8ec24c;
+  color: #19181a;
   font-weight: 600;
 }
 
@@ -599,7 +596,7 @@ Our Services Page
   content: "";
   width: 10%;
   height: 3px;
-  background: #8ec24c;
+  background: #19181a;
   position: absolute;
   top: 0;
 }
@@ -662,7 +659,7 @@ About Us
   right: 20px;
   padding: 15px 20px;
   border-radius: 40px;
-  background: darkslategray;
+  background: rgb(25 24 26);
   z-index: 1;
 }
 
@@ -675,6 +672,10 @@ About Us
 
 .whatsapp-btn > a > i {
   font-size: 20px;
+}
+
+.index-welcome-right img {
+  height: 400px;
 }
 
 /*.................................. 
@@ -707,7 +708,7 @@ About Us
   header {
     position: fixed;
     top: 0;
-    background: #8ec24c;
+    background: #19181a;
   }
 
   header.active {
@@ -723,7 +724,7 @@ About Us
     top: -30%;
     height: 30%;
     width: 100%;
-    background: #8ec24c;
+    background: #19181a;
     left: 0;
     transition: all 0.4s ease-in-out;
     display: flex;
